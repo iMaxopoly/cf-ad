@@ -11,8 +11,8 @@
         a { color: #dc8100; text-decoration: none; }
         a:hover { color: #333; text-decoration: none; }
         .center{text-align: center;}
-        .widgetwidth{max-width: 220px;}
-        .widgetheight{max-height: 400px}
+        .container{display: flex;max-width: 800px;}
+        .widget{flex-grow: 1;}
 </style>
     </head>
     <body>
@@ -34,16 +34,18 @@
         	::IM_UNDER_ATTACK_BOX::
         </div>
     </article>
-    <div class="widgetwidth widgetheight">
-    	<!-- Twitter Widget -->
-    	<a class="twitter-timeline" href="https://twitter.com/AnimedomTweets">Tweets by AnimedomTweets</a>
-    	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    	<!-- Twitter Widget -->
-    </div>
-	<div class="widgetwidth widgetheight">
-    	<!-- Facebook Widget -->
-    	<div class="fb-page" data-href="https://www.facebook.com/AnimedomOfficial/" data-tabs="timeline" data-height="270" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/AnimedomOfficial/"><a href="https://www.facebook.com/AnimedomOfficial/">Animedom</a></blockquote></div></div>
-    	<!-- Facebook Widget -->
+    <div class="container">
+    	<div class="widget">
+    		<!-- Twitter Widget -->
+    		<a class="twitter-timeline" href="https://twitter.com/AnimedomTweets">Tweets by AnimedomTweets</a>
+    		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    		<!-- Twitter Widget -->
+    	</div>
+    	<div class="widget">
+    		<!-- Facebook Widget -->
+    		<div class="fb-page" data-href="https://www.facebook.com/AnimedomOfficial/" data-tabs="timeline" data-height="270" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/AnimedomOfficial/"><a href="https://www.facebook.com/AnimedomOfficial/">Animedom</a></blockquote></div></div>
+    		<!-- Facebook Widget -->
+    	</div>
     </div>
     <!-- Site Code -->  
     </body>
